@@ -268,6 +268,7 @@
       stylesheet.media = 'bogus';
       // set the media back when the stylesheet loads
       stylesheet.onload = function() {stylesheet.media = 'all'};
+      console.log(stylesheet);
       document.getElementsByTagName('head')[0].appendChild(stylesheet);
 
       // Fade out
